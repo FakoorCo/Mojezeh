@@ -1,0 +1,130 @@
+﻿
+/**page loader**/
+
+
+.loader-o {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0px 8px 0px 8px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f47777;
+    z-index: 1999;
+}
+
+@-webkit-keyframes rotate-forever {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate-forever {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-forever {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    -webkit-animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: rotate-forever;
+    -moz-animation-name: rotate-forever;
+    animation-name: rotate-forever;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    height: 30px;
+    width: 30px;
+    border: 8px solid #ffffff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.loading-spinner {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    margin: -16px 0 0 -16px;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide-loading {
+    display: none;
+}
+
+.loading {
+    display: block;
+}
+
+/*********************************/
